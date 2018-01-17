@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.ggdz.store.tictactoe.GameActivity"
+    android:id="@+id/activity_main_layout"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="S C O R E"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/panelColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/panelColor">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Player X"
+            android:id="@+id/player_name_X"
+            android:textSize="20sp"
+            android:textColor="@color/colorOfX"/>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Player O"
+            android:id="@+id/player_name_O"
+            android:textSize="20sp"
+            android:textColor="@color/colorOfO"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/panelColor">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="99"
+            android:id="@+id/player_score_X"
+            android:textSize="25sp"
+            android:textColor="@color/colorOfX" />
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="99"
+            android:id="@+id/player_score_O"
+            android:textSize="25sp"
+            android:textColor="@color/colorOfO"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button2"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button3"
+                android:textSize="@dimen/markSize"
+                tools:text="X" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button4"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button5"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button6"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button7"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button8"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+
+            <Button
+                android:layout_width="@dimen/boxSize"
+                android:layout_height="@dimen/boxSize"
+                android:id="@+id/button9"
+                android:textSize="@dimen/markSize"
+                tools:text="X"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="X's turn to move"
+        android:padding="20dp"
+        android:id="@+id/move_message"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:background="@color/panelColor"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="quit game"
+            android:id="@+id/finish_message_button"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="fresh game"
+            android:id="@+id/reset_message_button"/>
+    </LinearLayout>
+</LinearLayout>
